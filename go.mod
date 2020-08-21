@@ -17,5 +17,3 @@ require (
 	golang.org/x/sys v0.0.0-20200728102440-3e129f6d46b1 // indirect
 	gotest.tools/gotestsum v0.5.2
 )
-
-

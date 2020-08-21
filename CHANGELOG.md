@@ -1,50 +1,29 @@
-<a name="v2.5.1"></a>
-## [v2.5.1] - 2020-08-14
+<a name="unreleased"></a>
+## [Unreleased]
+
 ### Bug Fixes
 - cannot create resource "newrelic_infra_alert_condition" of type "infra_host_not_reporting"
-- **infra:** avoid nil pointer reference
-- **infra:** avoid nil pointer reference
-
-<a name="v2.5.0"></a>
-## [v2.5.0] - 2020-08-03
-### Bug Fixes
+- **alert_channel:** avoid drift with config.auth_password
+- **alert_channel:** avoid config drift with sensitive values not returned by the API
 - **alert_policy:** avoid drift due to account_id inheritance in resource and data source
-- **nrql_alert_condition:** avoid drift due to account_id inheritance in NRQL alert condition
-
-### Documentation Updates
-- **synthetics_monitor_location:** Adding docs for Synthetics monitor location data source.
-
-### Features
-- **synthetics_monitor_location:** Add data source newrelic_synthetics_monitor_location.
-
-<a name="v2.4.2"></a>
-## [v2.4.2] - 2020-07-30
-### Documentation Updates
-- **dashboard:** Improve docs for limit and order_by widget attributes
-
-<a name="v2.4.1"></a>
-## [v2.4.1] - 2020-07-29
-### Bug Fixes
-- **alerts:** flatten condition scope properly for APM JVM metrics
-- **newrelic_alert_condition:** allow instance scope for JVM app metrics
-
-<a name="v2.4.0"></a>
-## [v2.4.0] - 2020-07-28
-### Bug Fixes
 - **alerts:** Unify how alert policy selects an account_id
+- **alerts:** flatten condition scope properly for APM JVM metrics
+- **infra:** avoid nil pointer reference
+- **infra:** avoid nil pointer reference
 - **infra_alert_condition:** support zero-value thresholds for infra_alert_condition resource
-
+- **newrelic_alert_condition:** allow instance scope for JVM app metrics
+- **nrql_alert_condition:** avoid drift due to account_id inheritance in NRQL alert condition
 ### Documentation Updates
+- **alert_channel:** add note to import section regarding handling of sensitive data
+- **alert_muting_rule:** Added docs for alert muting rule.
 - **alert_policy:** update alert_policy import section, add  default to arg ref
-
-### Features
-- **infra_alert_condition:** add description attribute
-
-<a name="v2.3.0"></a>
-## [v2.3.0] - 2020-07-23
+- **dashboard:** Improve docs for limit and order_by widget attributes
+- **synthetics_monitor_location:** Adding docs for Synthetics monitor location data source.
 ### Features
 - add a newrelic_account data source
-
+- **alert_muting_rule:** Creating alert muting rule resource.
+- **infra_alert_condition:** add description attribute
+- **synthetics_monitor_location:** Add data source newrelic_synthetics_monitor_location.
 <a name="v2.2.1"></a>
 ## [v2.2.1] - 2020-07-10
 ### Bug Fixes
@@ -147,13 +126,6 @@
 - **nrql_alert_condition:** integrate nerdgraph for nrql alert conditions
 - **provider:** add region to provider schema, handle API URLs based off region
 
-<a name="v1.20.1"></a>
-## [v1.20.1] - 2020-07-27
-### Bug Fixes
-- **infra_alert_condition:** [v1.x] support zero-value thresholds for infra_alert_condition resource
-
-<a name="v1.20.0"></a>
-## [v1.20.0] - 2020-07-23
 <a name="v1.19.1"></a>
 ## [v1.19.1] - 2020-06-24
 ### Bug Fixes
@@ -368,21 +340,13 @@
 ## [v0.1.1] - 2017-08-02
 <a name="v0.1.0"></a>
 ## v0.1.0 - 2017-06-21
-[Unreleased]: https://github.com/newrelic/terraform-provider-newrelic/compare/v2.5.1...HEAD
-[v2.5.1]: https://github.com/newrelic/terraform-provider-newrelic/compare/v2.5.0...v2.5.1
-[v2.5.0]: https://github.com/newrelic/terraform-provider-newrelic/compare/v2.4.2...v2.5.0
-[v2.4.2]: https://github.com/newrelic/terraform-provider-newrelic/compare/v2.4.1...v2.4.2
-[v2.4.1]: https://github.com/newrelic/terraform-provider-newrelic/compare/v2.4.0...v2.4.1
-[v2.4.0]: https://github.com/newrelic/terraform-provider-newrelic/compare/v2.3.0...v2.4.0
-[v2.3.0]: https://github.com/newrelic/terraform-provider-newrelic/compare/v2.2.1...v2.3.0
+[Unreleased]: https://github.com/newrelic/terraform-provider-newrelic/compare/v2.2.1...HEAD
 [v2.2.1]: https://github.com/newrelic/terraform-provider-newrelic/compare/v2.2.0...v2.2.1
 [v2.2.0]: https://github.com/newrelic/terraform-provider-newrelic/compare/v2.1.2...v2.2.0
 [v2.1.2]: https://github.com/newrelic/terraform-provider-newrelic/compare/v2.1.1...v2.1.2
 [v2.1.1]: https://github.com/newrelic/terraform-provider-newrelic/compare/v2.1.0...v2.1.1
 [v2.1.0]: https://github.com/newrelic/terraform-provider-newrelic/compare/v2.0.0...v2.1.0
-[v2.0.0]: https://github.com/newrelic/terraform-provider-newrelic/compare/v1.20.1...v2.0.0
-[v1.20.1]: https://github.com/newrelic/terraform-provider-newrelic/compare/v1.20.0...v1.20.1
-[v1.20.0]: https://github.com/newrelic/terraform-provider-newrelic/compare/v1.19.1...v1.20.0
+[v2.0.0]: https://github.com/newrelic/terraform-provider-newrelic/compare/v1.19.1...v2.0.0
 [v1.19.1]: https://github.com/newrelic/terraform-provider-newrelic/compare/v1.19.0...v1.19.1
 [v1.19.0]: https://github.com/newrelic/terraform-provider-newrelic/compare/v1.18.0...v1.19.0
 [v1.18.0]: https://github.com/newrelic/terraform-provider-newrelic/compare/v1.17.1...v1.18.0
